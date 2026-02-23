@@ -8,7 +8,9 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from db import init_db, get_db
 
 # ───────── НАСТРОЙКИ ─────────
-BOT_TOKEN = "8440989059:AAGf0RV24S6S-dqUO_tQW1KX5_r-U-8JUCw"
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # токен візьметься з налаштувань Render, а не з коду
 OWNER_ID = 7059576652
 OWNER_TAG = "@kalev12"
 
